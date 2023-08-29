@@ -1,0 +1,16 @@
+.intro-design {
+    margin-top: 3%;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    padding: 2% 0%;
+}
+
+.border-design {
+    border-left: 4px dotted grey; 
+}
+
+.image-design {
+    object-fit: contain;
+    max-width: 100%;
+    min-height: 200px;
+}

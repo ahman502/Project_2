@@ -1,0 +1,151 @@
+<!-- 
+    Author: Natalia Ahmad 
+    Project: Roots Technology Project 2 
+    Date Created: July 23th, 2023 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project 2 Bootstrap</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- linking the css stylesheet below  -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <!-- creating a navigation bar with dark backround and light text color that will stack the navigation bar vertically on medium sized and smaller screens -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!-- using .container class for a responsive fixed width container that will adjust its width according to screen width-->
+        <div class="container"> 
+            <a class="navbar-brand" href="#">Insert Logo Here</a>
+            <!-- Using .navbar-toggler to show/hide navbar items. Using data-bs-toggle="collapse" to indicate a collapsible element -->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myList" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>          <!-- icon for the hamburger menu-->
+            </button>
+            <div class="collapse navbar-collapse" id="myList">    <!-- using collapse navbar-collapse class for grouping and hiding navbar contents -->
+                <ul class="navbar-nav ms-auto small">                 <!-- seeting margin start to auto to create as much margin as possible between the logo and navigation bar-->
+                    <li class="nav-item active"><a href="#" class="nav-link active">Home</a></li>     <!-- the Home button will be set active-->
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Our Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Our Team</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- adding some custom design with intro-design class-->
+    <div class="container intro-design">
+        <div class="row align-items-center px-5 mx-0">     <!-- center aligning all columns vertically-->
+            <div class="col-md-5 pt-3">
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                    consequat.</p>
+            </div>
+            <div class="col-md-7 order-first order-md-1">
+                <!-- image from: https://www.vecteezy.com/photo/12508523-young-business-woman-in-front-her-team -->
+                <img src="images/woman_in_white.jpg" class="img-responsive" style="width:100%" alt="Business woman in white top">
+            </div>
+        </div>
+    </div>
+
+    <!-- info container with breakpoint of a medium sized screen -->
+    <div class="container">
+        <div class="row align-items-center p-4">     
+            <div class="col-md-8">                
+                <h1>I AM A TITLE</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit 
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                occaecat cupidatat non proident, sunt in culpa qui officia 
+                deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-md-4 mt-2 border-design">
+                <h4>TESTIMONIALS</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua.</p>
+            <p class="text-end fst-italic mb-0">~ Natalia Ahmad</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- last container that uses card class for each column -->
+    <div class="container">
+        <h4 class="text-center mt-2">WHY CHOOSE US?</h4>
+        <div class="row mb-3 mt-4">
+            <!-- each card spans 3 columns so in total all cards take up 12 columns -->
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- image from: https://www.vecteezy.com/photo/3536572-team-workers-thumbs-up-for-success-in-business-in-front-of-wall-at-cafe-business-and-success-concept-teammate-and-cooperation-soft-tone-pinterest-and-instragram-like-process -->
+                        <img src="images/team_photo.jpg" class="img-responsive image-design" alt="Photo of a team">
+                        <h5 class="card-title mt-2">OUR TEAM</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="btn btn-dark">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- image from: https://www.vecteezy.com/photo/1226972-professional-woman-providing-support -->
+                        <img src="images/our_services.jpg" class="img-responsive image-design" alt="Photo of woman smiling">
+                        <h5 class="card-title mt-2">OUR SERVICES</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="btn btn-dark">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- image from: https://www.vecteezy.com/photo/5246891-smiling-happy-businessman-and-businesswomen-celebrating-success-achievement-arm-raised-and-show-thumb-up-concept -->
+                        <img src="images/references.jpg" class="img-responsive image-design" style="width:100%;" alt="Photo of men and woman giving thumbs up">
+                        <h5 class="card-title mt-2">REFRENCES</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="btn btn-dark">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- image from: https://www.vecteezy.com/photo/1259936-stack-of-newspapers -->
+                        <img src="images/press_release.jpg" class="img-responsive image-design" style="width:100%;" alt="Stacked newspaper photo">
+                        <h5 class="card-title mt-2">PRESS RELEASE</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="btn btn-dark">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
